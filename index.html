@@ -7,8 +7,8 @@
     <link href="amy-site.css" rel="stylesheet">
     <title>Home</title>
     <style>
-        nav {
-            padding-left: 10px;
+        label {
+            padding-top: 4px;
         }
     </style>
 </head>
@@ -40,10 +40,10 @@
                 <h1 class="text-center" style="padding-top: 15px">The Artwork of Amy Grant</h1>
         </div>
         <div class="row">
-<!--            <div class="col-sm-4">-->
-<!--                <a class="twitter-timeline" data-width="500" data-height="460" href="https://twitter.com/metmuseum?ref_src=twsrc%5Etfw">Tweets by metmuseum</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
-<!--            </div>-->
-            <div class="col-sm-4 mx-auto">
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
                 <div class="text-center"> <img src="IMG_9463.jpg" class="img-fluid" alt="Luke's gift" width="460" height="375"> </div>
             </div>
 <!--            <div class="col-sm-4">-->
@@ -52,27 +52,59 @@
 
         </div>
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
                 <p class="text-center" style="padding-top: 15px">
                     Mary K. McGee Memorial Award for Excellence in Pastel<br>
                     Honorable Mention 21st Annual Pastel 100 Competition 2020<br>
                     Honorable Mention International juried Fine Art Competition “Drawing 2”<br>
                     Luke's First Prize for Being Cool<br>
                 </p>
+
+                <form class="text-center">
+                    <div class="form-group">
+                        <label for="emailInput">Mailing List</label>
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">Join for updates on latest works, news, and more!</small>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="text-center">
+                    Feel Free to Contact me with any Questions!
+                </h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name (required)</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                        <label for="emailInput">Email Address (required)</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="Enter email">
+                        <label for="phoneNum">Phone Number (required)</label>
+                        <input type="text" class="form-control" id="phoneNum" placeholder="Enter Phone Number">
+                        <label for="commentsTA">Comments (required)</label>
+                        <textarea class="form-control" id="commentsTA" rows="5"></textarea>
+                        <!--                        <small id="jae" class="form-text text-muted">Join for updates on latest works, news, and more!</small>-->
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary text-center">Submit!</button>
+                </form>
             </div>
 
         </div>
-         <div class="row">
-             <div class="col-sm-4 mx-auto">
-                 <form class="text-center">
-                     <div class="form-group">
-                         <label for="emailInput">Mailing List</label>
-                         <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-                         <small id="emailHelp" class="form-text text-muted">Join for updates on latest works, news, and more!</small>
-                     </div>
-                 </form>
-             </div>
-         </div>
+<!--         <div class="row">-->
+<!--             <div class="col-sm-4 mx-auto">-->
+<!--                 <form class="text-center">-->
+<!--                     <div class="form-group">-->
+<!--                         <label for="emailInput">Mailing List</label>-->
+<!--                         <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">-->
+<!--                         <small id="emailHelp" class="form-text text-muted">Join for updates on latest works, news, and more!</small>-->
+<!--                     </div>-->
+<!--                 </form>-->
+<!--             </div>-->
+
+<!--         </div>-->
 
          </div>
         </div>
