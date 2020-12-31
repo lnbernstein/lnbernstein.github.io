@@ -12,6 +12,11 @@ html {
 }
 body {
     margin-bottom: 60px; /* Margin bottom by footer height */
+    background-color: #FFEBCD;
+}
+
+input {
+    background-color: #FFEBCD;
 }
 
 .footer {
