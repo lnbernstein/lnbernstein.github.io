@@ -30,3 +30,11 @@ input {
 #footer-content {
     background-color: white;
 }
+
+.gallery-top {
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #FFEBCD;
+}
