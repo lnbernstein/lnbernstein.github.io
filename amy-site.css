@@ -1,11 +1,24 @@
 body {
-    font-family: Karla;
+    /*font-family: Amatic SC;*/
     background-color: #8fae90;
 }
 
 nav {
     padding-left: 10px;
 }
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
 
 html {
     position: relative;
