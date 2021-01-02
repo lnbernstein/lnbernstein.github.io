@@ -52,3 +52,9 @@ input {
 .card {
     background-color: #FFEBCD;
 }
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
