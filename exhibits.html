@@ -5,32 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="amy-site.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
-    <title>Showcase</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento Sans">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA52uYmz1RcwA2UWhzzCC0V1hBT6SArNfc&callback=initMap&libraries=&v=weekly"
+        defer>
+    </script>
+    <script src="map.js">
+    </script>
 
-    <style>
-        img {
-            padding-bottom: 10px;
-        }
-
-        h5 {
-            text-align: center;
-        }
-
+    <style type="text/css">
         body {
-            font-family: Philosopher;
+            font-family: Quattrocento Sans;
         }
 
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 200px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
 
+        #map2 {
+            height: 200px;
+            width: 100%;
+        }
+
+        #map3 {
+            height: 200px;
+            width: 100%;
+        }
     </style>
+
+
+    <title>Exhibits</title>
 </head>
 <body style="background-color: #d1e0e0">
     <header style="background-color: white">
         <h1 class="text-center" style="padding-top: 15px"> <a style="color: black; text-decoration: none;" href="gallery-showcase.html">Amy B. Grant Fine Art</a> </h1>
         <nav class="navbar navbar-expand-sm navbar-light" style="background-color: white;">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#Menu">
-                    <span style="padding-right: 4px" class="navbar-toggler-icon">
-                    </span>
+                        <span style="padding-right: 4px" class="navbar-toggler-icon">
+                        </span>
             </button>
             <!--            <a style="font-style: italic; color: dodgerblue;" href="index.html" class="navbar-brand">Amy B. Grant Fine Art</a>-->
             <div class="collapse navbar-collapse" id="Menu">
@@ -56,50 +72,49 @@
     </header>
 
     <div class="container-fluid">
-        <div class="row">
-                <div class="col-md">
-                    <h3 class="text-center" style="padding-top: 15px"> <a style="color: black; text-decoration: none;" href="showcase.html">Portfolio of Artwork</a> </h3>
-                </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-4">
-                <a href="florals.html">
-                    <img class="img-fluid" src="IMG_1058.JPG" alt="Summer Bloom">
-                </a>
-                <h3 class="text-center">Florals</h3>
-<!--                <p class="text-center">“Love is like a beautiful flower which I may not touch, but whose fragrance makes the garden a place of delight just the same.” – Helen Keller</p>-->
+        <div style="margin-top: 20px;" class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center display-4"> Representation and Exhibits</h1>
+                <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-
+            <div class="col-md-2">
+                <h5 class="text-center"><br>Representation:</h5>
+                <p class="text-center">
+                    <br><br>Life Time Athletic <br> 700 Swedesford Rd <br> Wayne, PA 19087 <br> 484-254-7000 <br> <a class="text-decoration-none" href="http://bit.ly/3naZiP3">Life Time Athletic</a>
+                </p>
             </div>
-            <div class="col-md-4">
-                <a href="still-life.html">
-                    <img class="img-fluid" src="IMG_0540.jpg" alt="Basil and Tomato">
-                </a>
-                <h3 class="text-center">Still Life</h3>
-<!--                <p class="text-center">“Love is like a beautiful flower which I may not touch, but whose fragrance makes the garden a place of delight just the same.” – Helen Keller</p>-->
+            <div class="col-md-5">
+                <br> <br> <br>
+                <div id="map"></div>
             </div>
         </div>
-
         <div class="row">
-            <div class="col-md-4">
-
+            <div class="col-md-2">
+                <p class="text-center">
+                    <br><br><br><br><br>Philadelphia Museum of Art <br> 2600 Benjamin Franklin Pkwy <br> Philadelphia, PA 19130 <br> 215-763-8100 <br> <a class="text-decoration-none" href="https://philamuseum.org/">Philadelphia Museum of Art</a>
+                </p>
             </div>
-            <div class="col-md-4">
-                <a href="landscape.html">
-                    <img class="img-fluid" src="IMG_1059.JPG" alt="Summer Bloom">
-                </a>
-                <h3 class="text-center">Landscape</h3>
-<!--                <p class="text-center">“Love is like a beautiful flower which I may not touch, but whose fragrance makes the garden a place of delight just the same.” – Helen Keller</p>-->
+            <div class="col-md-5">
+                <br> <br> <br>
+                <div id="map2"></div>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-2">
+                <p class="text-center">
+                    <br><br><br><br><br>Philadelphia Museum of Art <br> 2600 Benjamin Franklin Pkwy <br> Philadelphia, PA 19130 <br> 215-763-8100 <br> <a class="text-decoration-none" href="https://philamuseum.org/">Philadelphia Museum of Art</a>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <br> <br> <br>
+                <div id="map3"></div>
+            </div>
+        </div>
     </div>
+
+
 
     <footer class="footer">
         <!-- Grid container -->
@@ -119,9 +134,11 @@
         </div>
     </footer>
 
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 </body>
 </html>
