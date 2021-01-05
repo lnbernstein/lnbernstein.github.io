@@ -27,6 +27,18 @@ nav {
     background-color: white;
 }
 
+.card {
+    border: none;
+}
+
+.fa-angle-left {
+    color: white;
+}
+
+.fa-angle-right {
+    color: white;
+}
+
 html {
     position: relative;
     min-height: 100%;

@@ -11,6 +11,9 @@
           integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
     <style>
         .my-img {
@@ -32,6 +35,12 @@
         .div-img {
             margin-top: 20px;
         }
+
+        .owl-prev {
+            color: white;
+        }
+
+
     </style>
 </head>
 <body style="background-color: black;">
@@ -99,7 +108,8 @@
                 margin: 10,
                 URLhashListener:true,
                 startPosition: 'URLHash',
-                nav: true
+                nav: true ,
+                navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
             });
         });
 
