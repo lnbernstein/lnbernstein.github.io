@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=ABeeZee");
+
 body {
-    /*font-family: Amatic SC;*/
+    font-family: ABeeZee;
     background-color: #8fae90;
 }
 
