@@ -3,12 +3,12 @@ var map2, map3, map4;
 
 function initMap() {
     // The location of Lifetime Wayne, PA
-    const lifetime = { lat: 40.07973182609873, lng: -75.41010857713096 };
+    const malvern = { lat: 40.03094379551315, lng: -75.62785300536765};
     const pMOA = { lat: 39.96589684702076, lng: -75.1817300247673}
 
     var myOptions = {
         zoom: 15,
-        center: lifetime
+        center: malvern
     }
 
     var myOptions2 = {
@@ -16,7 +16,7 @@ function initMap() {
         center: pMOA
     }
 
-    map2 = new google.maps.Map(document.getElementById("map"), myOptions);
+    map2 = new google.maps.Map(document.getElementById("malvern"), myOptions);
     map3 = new google.maps.Map(document.getElementById("map2"), myOptions2);
     map4 = new google.maps.Map(document.getElementById("map3"), myOptions2);
 

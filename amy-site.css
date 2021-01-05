@@ -19,6 +19,13 @@ nav {
     float:none;
 }
 
+.primary {
+    background-color: whitesmoke;
+}
+
+.secondary {
+    background-color: white;
+}
 
 html {
     position: relative;

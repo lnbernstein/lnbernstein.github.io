@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="amy-site.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
     <title>About</title>
 
     <style>
@@ -17,8 +18,18 @@
             font-family: ABeeZee;
         }
 
+        footer {
+            font-family: ABeeZee;
+        }
+
         p {
             font-size: 18px;
+        }
+
+
+
+        .form-control {
+            width: 500px;
         }
 
     </style>
@@ -69,10 +80,10 @@
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <p>
-                    Amy Grant holds a B.A. in Art History from Marymount Manhattan College. She started her career in NYC, working in picture research and then serving in one of the curatorial departments of The Metropolitan Museum of Art.  After marrying and starting to raise children in NJ, Amy and her family relocated to suburban Philadelphia.
+                    Amy Grant holds a B.A. in Art History from Marymount Manhattan College. She started her career in NYC, in art book publishing and then at The Metropolitan Museum of Art curatorial department. After marrying and starting to raise her children in NJ, Amy and her family relocated to suburban Philadelphia.
                 </p>
                 <p>
-                    Settling in a community near Valley Forge National Park, she discovered many new and exciting opportunities to continue studying Art. She shifted her focus from Art History to Studio Art, taking classes and workshops at the Wayne Art Center and the Pennsylvania Academy of the Fine Arts. This course work lead to a new career in Art Education.
+                    Settling in Chester County, P.A., she discovered new opportunities to continue studying Art. She shifted her focus from Art History to Studio Art, taking classes and workshops at the Wayne Art Center and the Pennsylvania Academy of the Fine Arts. This course work lead to a new career in Art Education.
                 </p>
                 <p>
                     Amy has had the privilege of teaching Art to children for over twenty years. Amy now devotes her time to practicing her own artwork, focusing primarily on florals, still-lifes and landscapes in pastel.
@@ -81,44 +92,54 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <h3><u>Exhibition History:</u></h3>
-                <ul>
-                    <li>Wayne Art Center, Fall Members’ Show, 2020 </li>
-                    <li>Philadelphia Pastel Society, First Annual Juried Exhibition, 2020</li>
-                    <li>Philadelphia Sketch Club, The Art of the Flower Juried Exhibition, 2020</li>
-                    <li>Wayne Art Center, Juried Members’ Show, 2019</li>
-                    <li>New Hampshire Pastel Society, 10th  Annual National Juried Exhibition: It’s Pastel, 2018</li>
-                    <li>Wayne Art Center,  Juried Members’ Show, 2017</li>
-                    <li>Connecticut Pastel Society, 24th Annual National Juried Exhibition: Renaissance in Pastels, 2017</li>
-                    <li>Philadelphia Sketch Club, The Art of the Flower Juried Exhibition, 2017</li>
-                    <li>Connecticut Pastel Society, 23rd Annual National Juried Exhibition: Renaissance in Pastels, 2016</li>
-                    <li>John James Audubon Center at Mill Grove, Drawn From Nature, Juried Exhibition, 2016</li>
-                    <li>Jenkins Arboretum, Berwyn, PA: Celebrating Light and Color, Juried Exhibition, 2016</li>
-                    <li>New Hope Art League, Annual Juried Exhibition, 2015</li>
-                    <li>Pennsylvania Academy of the Fine Arts, Continuing Education Student Juried Exhibition, 2014</li>
-                    <li>Wayne Art Center, Faculty Show, 2013-16</li>
-                </ul>
+                <a style="text-decoration: none; color: black" href="exhibits.html">
+                    <h3><u>Exhibition History:</u></h3>
+                </a>
             </div>
         </div>
     </div>
 
-    <footer class="footer">
-        <!-- Grid container -->
-        <div id="footer-content">
-            <div class="container p-4 pb-0">
-                    <!--Grid row-->
-                    <div class="row">
-                        <!--Grid column-->
-                        <div class="col-md-8">
-                            <p style="font-weight: bold; font-style: italic; font-size: 12pt">&#169;Amy B. Grant</p>
-                        </div>
-                        <div class="col-md-4">
-                            Find me on Instagram @amygrantpastels
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer">
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </div>
+
+
+<!--    <footer class="footer">-->
+<!--        <div id="footer-content">-->
+<!--                <div class="primary p-4 pb-2">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-md-4">-->
+<!--                            <h3 class="text-center">Join My Newsletter List!</h3>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4">-->
+<!--                            <form>-->
+<!--                                <div class="input-group input-group-sm mb-3">-->
+<!--                                    <input type="email" class="form-control" placeholder="Enter your email!" aria-label="Recipient's username" aria-describedby="basic-addon2">-->
+<!--                                    <div class="input-group-append">-->
+<!--                                        <button style="margin-left: 20px" class="btn btn-secondary" type="button">Join!</button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="secondary p-4 pb-1">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-md-8">-->
+<!--                            <p style="font-weight: bold; font-style: italic; font-size: 12pt">&#169;Amy B. Grant</p>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4">-->
+<!--                            Find me on Instagram @amygrantpastels-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
 
 
 <!--                        <div class="col-auto">-->
@@ -151,8 +172,8 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

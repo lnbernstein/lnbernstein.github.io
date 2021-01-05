@@ -13,13 +13,15 @@
     <script src="map.js">
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+
     <style type="text/css">
         body {
             font-family: Quattrocento Sans;
         }
 
         /* Set the size of the div element that contains the map */
-        #map {
+        #malvern {
             height: 200px;
             /* The height is 400 pixels */
             width: 100%;
@@ -79,66 +81,49 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2">
-                <h5 class="text-center"><br>Representation:</h5>
+            <div class="col-md-4">
+                <h5 class="text-center"><br>Upcoming Exhibits:</h5>
                 <p class="text-center">
-                    <br><br>Life Time Athletic <br> 700 Swedesford Rd <br> Wayne, PA 19087 <br> 484-254-7000 <br> <a class="text-decoration-none" href="http://bit.ly/3naZiP3">Life Time Athletic</a>
+                    Malvern Retreat House Juried Show (2022) <br> 315 S Warren Ave, <br>  Malvern, PA 19355 <br> 610-644-0400 <br> <a class="text-decoration-none" href="https://www.malvernretreat.com/">Malvern Retreat House</a>
                 </p>
-            </div>
-            <div class="col-md-5">
-                <br> <br> <br>
-                <div id="map"></div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-md-2">
-                <p class="text-center">
-                    <br><br><br><br><br>Philadelphia Museum of Art <br> 2600 Benjamin Franklin Pkwy <br> Philadelphia, PA 19130 <br> 215-763-8100 <br> <a class="text-decoration-none" href="https://philamuseum.org/">Philadelphia Museum of Art</a>
-                </p>
-            </div>
-            <div class="col-md-5">
-                <br> <br> <br>
-                <div id="map2"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <p class="text-center">
-                    <br><br><br><br><br>Philadelphia Museum of Art <br> 2600 Benjamin Franklin Pkwy <br> Philadelphia, PA 19130 <br> 215-763-8100 <br> <a class="text-decoration-none" href="https://philamuseum.org/">Philadelphia Museum of Art</a>
-                </p>
-            </div>
-            <div class="col-md-5">
-                <br> <br> <br>
-                <div id="map3"></div>
+            <div class="col-md-8">
+                <h5 style="margin-left: 30px;"><br>Past Representation:</h5>
+                <ul style="margin-left: 30px;">
+                    <li>Wayne Art Center, Fall Members’ Show, 2020 </li>
+                    <li>Philadelphia Pastel Society, First Annual Juried Exhibition, 2020</li>
+                    <li>Philadelphia Sketch Club, The Art of the Flower Juried Exhibition, 2020</li>
+                    <li>Wayne Art Center, Juried Members’ Show, 2019</li>
+                    <li>New Hampshire Pastel Society, 10th  Annual National Juried Exhibition: It’s Pastel, 2018</li>
+                    <li>Wayne Art Center,  Juried Members’ Show, 2017</li>
+                    <li>Connecticut Pastel Society, 24th Annual National Juried Exhibition: Renaissance in Pastels, 2017</li>
+                    <li>Philadelphia Sketch Club, The Art of the Flower Juried Exhibition, 2017</li>
+                    <li>Connecticut Pastel Society, 23rd Annual National Juried Exhibition: Renaissance in Pastels, 2016</li>
+                    <li>John James Audubon Center at Mill Grove, Drawn From Nature, Juried Exhibition, 2016</li>
+                    <li>Jenkins Arboretum, Berwyn, PA: Celebrating Light and Color, Juried Exhibition, 2016</li>
+                    <li>New Hope Art League, Annual Juried Exhibition, 2015</li>
+                    <li>Pennsylvania Academy of the Fine Arts, Continuing Education Student Juried Exhibition, 2014</li>
+                    <li>Wayne Art Center, Faculty Show, 2013-16</li>
+                </ul>
             </div>
         </div>
     </div>
 
 
 
-    <footer class="footer">
-        <!-- Grid container -->
-        <div id="footer-content">
-            <div class="container p-4 pb-0">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-8">
-                        <p style="font-weight: bold; font-style: italic; font-size: 12pt">&#169;Amy B. Grant</p>
-                    </div>
-                    <div class="col-md-4">
-                        Find me on Instagram @amygrantpastels
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer">
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </div>
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
