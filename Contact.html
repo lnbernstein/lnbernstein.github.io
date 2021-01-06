@@ -28,16 +28,16 @@
                 <h3 class="text-center">
                     For more information, <br>please contact the artist.
                 </h3>
-                <form>
+                <form action="https://formspree.io/f/mpzokwer" method="POST">
                     <div class="form-group">
                         <label for="name">Name (required)</label>
-                        <input style="background-color: whitesmoke" type="text" class="form-control" id="name" placeholder="Enter Name">
+                        <input name="name" style="background-color: whitesmoke" type="text" class="form-control" id="name" placeholder="Enter Name">
                         <label for="contactEmail">Email Address (required)</label>
-                        <input style="background-color: whitesmoke" type="email" class="form-control" id="contactEmail" placeholder="Enter email">
+                        <input name="_replyto" style="background-color: whitesmoke" type="email" class="form-control" id="contactEmail" placeholder="Enter email">
                         <label for="phoneNum">Phone Number</label>
-                        <input style="background-color: whitesmoke" type="text" class="form-control" id="phoneNum" placeholder="Enter Phone Number">
+                        <input name="phone" style="background-color: whitesmoke" type="text" class="form-control" id="phoneNum" placeholder="Enter Phone Number">
                         <label for="commentsTA">Comments</label>
-                        <textarea style="background-color: whitesmoke" class="form-control" id="commentsTA" rows="5"></textarea>
+                        <textarea name="message" style="background-color: whitesmoke" class="form-control" id="commentsTA" rows="5"></textarea>
                     </div>
                     <br>
                     <button type="submit" class="btn btn-secondary text-center">Submit!</button>
