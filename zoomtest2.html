@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <style>
     body {
-        background-image:linear-gradient(to right,#4286f4 0%,#373B44 100%);
+        background-image:linear-gradient(to right, black 0%, black 100%);
         background-size:150% auto;
         animation:bg 1500ms ease-in-out infinite;
         animation-direction:alternate;
@@ -31,41 +32,55 @@
             background-size:170% auto;
         }
     }
-</style>
-<body>
 
-    <div class="container">
+    .my-img {
+        height: auto;
+        width: auto;
+        transform: scale(1);
+        transition: transform 0.2s ease-in-out;
+        /*max-width: 800px;*/
+        /*max-height: 800px;*/
+    }
+
+    h5 {
+        color: white;
+    }
+
+    h4 {
+        color: white;
+        margin-top: 10px;
+    }
+
+    p {
+        color: white;
+    }
+
+    .div-img {
+        margin-top: 30px;
+    }
+
+    i {
+        color: white;
+    }
+</style>
+<body style="background-color: black">
+
+    <header>
         <div class="row">
-            <div class="col-12 text-center h5">
-                <h1 class="mt-5 text-center h3">Bootstrap Carousel With Zoom Effect (Zoom jQuery)</h1>
+            <div class="col-md-4">
+                <a href="florals.html">
+                    <button style="margin: 4px; color: white" type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </a>
             </div>
-            <div class="col-12 col-lg-8 mx-auto">
-                <div id="carouselExampleIndicators" class="carousel slide w-50 mx-auto mt-5" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-<!--                            <div id="test1">-->
-                                <img class="w-100 rounded" src="images/IMG_1058.JPG" alt="First slide">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-<!--                            <div id="test2">-->
-                                <img class="w-100 rounded" src="https://picsum.photos/id/373/500/500" alt="Second slide">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-<!--                            <div id="test3">-->
-                                <img class="w-100 rounded" src="https://picsum.photos/id/376/500/500" alt="Third slide">
-                            </div>
-                        </div>
-                    </div>
-                    <ol class="d-block w-100 p-0 mt-2">
-                        <li class="d-inline-block w-25" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><img class="rounded shadow-sm w-100" src="https://picsum.photos/id/371/300" alt="First slide"></li>
-                        <li class="d-inline-block w-25" data-target="#carouselExampleIndicators" data-slide-to="1"><img class="rounded shadow-sm w-100" src="https://picsum.photos/id/373/300" alt="Second slide"></li>
-                        <li class="d-inline-block w-25" data-target="#carouselExampleIndicators" data-slide-to="2"><img class="rounded shadow-sm w-100" src="https://picsum.photos/id/376/300" alt="Third slide"></li>
-                    </ol>
-                </div>
+            <div class="col-md-4">
+                <h4 style="margin-top: 10px" class="text-center">Florals Gallery</h4>
             </div>
         </div>
+    </header>
+
+    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-4">
 
