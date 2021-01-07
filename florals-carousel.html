@@ -13,35 +13,44 @@
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style type="text/css">
+        #zoomtext {
+            transform: scale(1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .my-img {
+            height: auto;
+            width: auto;
+            transform: scale(1);
+            transition: transform 0.2s ease-in-out;
+            /*max-width: 800px;*/
+            /*max-height: 800px;*/
+        }
+
+        h5 {
+            color: white;
+        }
+
+        h4 {
+            color: white;
+            margin-top: 10px;
+        }
+
+        p {
+            color: white;
+        }
+
+        .div-img {
+            margin-top: 30px;
+        }
+
+    </style>
+
 
 
 </head>
-<style>
-    .my-img {
-        height: auto;
-        width: auto;
-        /*max-width: 800px;*/
-        /*max-height: 800px;*/
-    }
 
-    h5 {
-        color: white;
-    }
-
-    h4 {
-        color: white;
-        margin-top: 10px;
-    }
-
-    p {
-        color: white;
-    }
-
-    .div-img {
-        margin-top: 30px;
-    }
-
-</style>
 <body style="background-color: black;">
 
     <header>
@@ -52,6 +61,9 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </a>
+
+                <button id="zoomOut">-</button>
+                <button id="zoomIn">+</button>
             </div>
             <div class="col-md-4">
                 <h4 style="margin-top: 10px" class="text-center">Florals Gallery</h4>
@@ -62,15 +74,21 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-md-4">
+<!--                <article>-->
+<!--                    <section id="zoomtext">-->
+<!--                        <p style="color: white">This is a text that I want to be able to zoom in and out by means of the two buttons indicating plus and minus.</p>-->
+<!--                    </section>-->
+<!--                </article>-->
+
                 <div class="owl-carousel owl-theme">
                     <div class="div-img" data-hash="zero">
-                        <img class="my-img" src="images/IMG_1058.JPG">
+                        <img id="zoomtext" class="thumbnail zoom my-img" src="images/IMG_1058.JPG">
                         <h4 class="text-center">Summer Bloom</h4>
                         <h5 class="text-center">Pastel</h5>
                         <h5 class="text-center">9.5" x 7.5"</h5>
                     </div>
                     <div class="div-img" data-hash="one">
-                        <img class="img-fluid my-img d-block w-100" src="images/IMG_1426.jpg">
+                        <img class="thumbnail zoom img-fluid my-img d-block w-100" src="images/IMG_1426.jpg">
                         <h4 class="text-center">Blue Hydrangea</h4>
                         <h5 class="text-center">Pastel</h5>
                         <h5 class="text-center">6.5" x 5"</h5>
@@ -103,6 +121,34 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var zoom = 1;
+        var zoomStep = 0.2;
+
+        document.getElementById("zoomIn").addEventListener("click", function () {
+            zoom += zoomStep;
+            document.getElementById("zoomtext").style.transform = "scale(" + zoom + ")";
+        });
+        document.getElementById("zoomOut").addEventListener("click", function () {
+            if (zoom > zoomStep) {
+                zoom -= zoomStep;
+            }
+            document.getElementById("zoomtext").style.transform = "scale(" + zoom + ")";
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#test1').zoom();
+            $('#test2').zoom();
+            $('#test3').zoom();
+        });
+        $('.carousel').carousel({
+            //interval: 4000,
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
 
 
 

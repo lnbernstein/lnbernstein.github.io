@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body {
+        background-image:linear-gradient(to right,#4286f4 0%,#373B44 100%);
+        background-size:150% auto;
+        animation:bg 1500ms ease-in-out infinite;
+        animation-direction:alternate;
+    }
+    @keyframes bg{
+        from {
+            /*background-position:100% 0;*/
+            background-size:150% auto;
+        }
+        to {
+            /*background-position:102% 0;*/
+            background-size:170% auto;
+        }
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center h5">
+                <h1 class="mt-5 text-center h3">Bootstrap Carousel With Zoom Effect (Zoom jQuery)</h1>
+            </div>
+            <div class="col-12 col-lg-8 mx-auto">
+                <div id="carouselExampleIndicators" class="carousel slide w-50 mx-auto mt-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+<!--                            <div id="test1">-->
+                                <img class="w-100 rounded" src="images/IMG_1058.JPG" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+<!--                            <div id="test2">-->
+                                <img class="w-100 rounded" src="https://picsum.photos/id/373/500/500" alt="Second slide">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+<!--                            <div id="test3">-->
+                                <img class="w-100 rounded" src="https://picsum.photos/id/376/500/500" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="d-block w-100 p-0 mt-2">
+                        <li class="d-inline-block w-25" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><img class="rounded shadow-sm w-100" src="https://picsum.photos/id/371/300" alt="First slide"></li>
+                        <li class="d-inline-block w-25" data-target="#carouselExampleIndicators" data-slide-to="1"><img class="rounded shadow-sm w-100" src="https://picsum.photos/id/373/300" alt="Second slide"></li>
+                        <li class="d-inline-block w-25" data-target="#carouselExampleIndicators" data-slide-to="2"><img class="rounded shadow-sm w-100" src="https://picsum.photos/id/376/300" alt="Third slide"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="div-img" data-hash="zero">
+                        <div id="test1">
+                            <img class="my-img" src="images/IMG_1058.JPG">
+                        </div>
+
+                        <h4 class="text-center">Summer Bloom</h4>
+                        <h5 class="text-center">Pastel</h5>
+                        <h5 class="text-center">9.5" x 7.5"</h5>
+                    </div>
+                    <div class="div-img" data-hash="one">
+                        <div id="test2">
+                            <img class="img-fluid my-img d-block w-100" src="images/IMG_1426.jpg">
+                        </div>
+                        <h4 class="text-center">Blue Hydrangea</h4>
+                        <h5 class="text-center">Pastel</h5>
+                        <h5 class="text-center">6.5" x 5"</h5>
+                    </div>
+                    <div class="div-img" data-hash="two">
+                        <div id="test3">
+                            <img class="img-fluid my-img d-block w-100" src="images/lilyedited.JPG">
+                        </div>
+                        <h4 class="text-center">Blue vase with Calla Lily</h4>
+                        <h5 class="text-center">Pastel</h5>
+                        <h5 class="text-center">8" x 5"</h5>
+                    </div>
+                    <div class="div-img" data-hash="three">
+                        <div id="test4">
+                            <img class="my-img" src="images/IMG_1273.JPG">
+                        </div>
+                        <h4 class="text-center">Gerberas in a Vase</h4>
+                        <h5 class="text-center">Pastel</h5>
+                        <h5 class="text-center">11.5" x 8.5"</h5>
+                    </div>
+                    <div class="div-img" data-hash="four">
+                        <div id="test5">
+                            <img class="my-img" src="images/IMG_1567.jpg">
+                        </div>
+                        <h4 class="text-center">Becca's Bouquet</h4>
+                        <h5 class="text-center">Pastel</h5>
+                        <h5 class="text-center">8.5" x 6.5"</h5>
+                    </div>
+                    <div class="div-img" data-hash="five">
+                        <div id="test6">
+                            <img class="my-img" src="images/IMG_1280.JPG">
+                        </div>
+                        <h4 class="text-center">Three Roses</h4>
+                        <h5 class="text-center">Pastel</h5>
+                        <h5 class="text-center">8.5" x 8.5"</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('#test1').zoom();
+            $('#test2').zoom();
+            $('#test3').zoom();
+            $('#test4').zoom();
+            $('#test5').zoom();
+            $('#test6').zoom();
+        });
+        $('.carousel').carousel({
+            //interval: 4000,
+        })
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                center: true,
+                loop: true,
+                margin: 10,
+                autoHeight: true,
+                URLhashListener:true,
+                startPosition: 'URLHash',
+                nav: true ,
+                navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
+            });
+        });
+
+        jQuery(document.documentElement).keyup(function (event) {
+
+            var owl = jQuery(".owl-carousel");
+            // handle cursor keys
+            if (event.keyCode == 37) {
+                // go left
+                owl.trigger('prev.owl');
+            } else if (event.keyCode == 39) {
+                // go right
+                owl.trigger('next.owl');
+            }
+
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
+
+</body>
+</html>
