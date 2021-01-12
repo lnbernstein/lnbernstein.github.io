@@ -10629,5 +10629,10 @@ textarea.form-control-lg {
     font-size: 19px;
   }
 }
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .exhibit-redirect {
+    font-size: 23px;
+  }
+}
 
 /*# sourceMappingURL=amy-sass.css.map */
