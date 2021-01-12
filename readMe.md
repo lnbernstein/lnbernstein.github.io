@@ -1,9 +1,8 @@
 # Amy B. Grant Fine Art
 <hr>
 
-Deployed at https://lnbernstein.github.io for the moment.
 
-Will become amybgrantpastels.com
+Deployed at amybgrantpastels.com
 
 ### Project Overview:
 
