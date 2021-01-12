@@ -1,0 +1,9 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+@include media-breakpoint-down(sm) {
+  .small-device-nav {
+    text-align: left;
+    font-size: 14px;
+  }
+}
