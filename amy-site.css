@@ -16,6 +16,10 @@ nav {
     text-align: center;
 }
 
+li {
+    padding-right: 4px;
+}
+
 .navbar-nav > li {
     display: inline-block;
     float:none;

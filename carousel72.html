@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Landscape Carousel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css">
+
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+
+</head>
+<body style="background-color: black">
+
+    <div id="splide" class="splide">
+        <div class="splide__slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <img src="images/IMG_1059.JPG">
+                        </div>
+                        <h4 class="text-center">Pond at Wilson Park</h4>
+                        <h5 class="text-center">Pastel</h5>
+                        <h5 class="text-center">9" x 9" </h5>
+                        Lorem Ipsum Dolor Sit Amet
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <img src="images/IMG_1612.jpg">
+                        </div>
+                        Lorem Ipsum Dolor Sit Amet
+                    </li>
+                    <li class="splide__slide">
+                        <div class="splide__slide__container">
+                            <img src="images/IMG_1613.jpg">
+                        </div>
+                        Lorem Ipsum Dolor Sit Amet
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+<!--    <div id="image-slider" class="splide">-->
+<!--        <div class="splide__track">-->
+<!--            <ul class="splide__list">-->
+<!--                <li class="splide__slide">-->
+<!--                        <img src="images/IMG_1059.JPG">-->
+<!--                    <h4>Heading 1</h4>-->
+<!--                    <div>-->
+<!--                        Lorem Ipsum Dolor Sit Amet-->
+<!--                    </div>-->
+
+<!--                </li>-->
+<!--                <li class="splide__slide">-->
+<!--                    <img src="images/IMG_1613.jpg">-->
+<!--                    <h4>Heading 1</h4>-->
+<!--                    <div>-->
+<!--                        Lorem Ipsum Dolor Sit Amet-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="splide__slide">-->
+<!--                    <img src="images/IMG_1335.jpg">-->
+<!--                    <h4>Heading 1</h4>-->
+<!--                    <div>-->
+<!--                        Lorem Ipsum Dolor Sit Amet-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <script>
+
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#splide', {
+                type      : 'loop',
+                perPage   : 1,
+                // height    : '8rem',
+                heightRatio: 1,
+                cover     : true,
+                breakpoins: {
+                    640: {
+                        height: '6rem',
+                    }
+                }
+            } ).mount();
+            // new Splide( '#image-slider', {
+            //     perPage : 1,
+            //     trimSpace : true,
+                // 'cover'      : true,
+                // 'heightRatio': .8,
+            // } ).mount();
+        } );
+        // window.addEventListener( 'load', function () {
+        //     new Splide( '.splide', {
+        //         autoWidth: true,
+        //         rewind   : true,
+        //     } ).mount();
+        // } );
+        // new Splide( '.splide' , {
+        //     autoWidth : true,
+        //     focus : 'center',
+        // } ).mount();
+    </script>
+
+</body>
+</html>
