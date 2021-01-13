@@ -4,37 +4,57 @@
 
 <footer class="footer">
     <div id="footer-content">
-        <div class="primary p-4">
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <h3 style="margin-top: 15px" class="text-center">Join My Email List!</h3>
-                </div>
-                <div class="col-md-4">
-                    <form action="https://send.pageclip.co/BMX8Cxy6OaVcy0yYTWBsEMVQKSuk92uI/Newsletter" class="pageclip-form" method="post">
-                        <div class="input-group input-group-sm mb-3">
-                            <input name="email" type="email" class="form-control" placeholder="Enter your email!" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button style="margin-left: 20px" class="pageclip-form__submit btn btn-secondary" type="submit">
-                                    <span>Join!</span>
-                                </button>
+        <div class="container-fluid">
+            <div class="primary p-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <h3 style="margin-top: 15px" class="text-center">Join My Email List!</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <form action="https://send.pageclip.co/BMX8Cxy6OaVcy0yYTWBsEMVQKSuk92uI/Newsletter" class="pageclip-form" method="post">
+                            <div class="input-group input-group-sm mb-3">
+                                <input name="email" type="email" class="form-control" placeholder="john123@gmail.com" aria-label="Recipient's username" aria-describedby="Email Address" required>
+                                <div class="input-group-append">
+                                    <button style="margin-left: 20px" class="pageclip-form__submit btn btn-secondary" type="submit">
+                                        <span>Join!</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="secondary">
+                <div class="row" >
+                    <div class="col-md-6 col-sm-3">
+                        <p style="font-size: 11pt; margin-left: 20px">All Images &#169;2020 Amy B. Grant</p>
+                    </div>
+                    <div class="col-md-6 col-sm-9">
+                        <p style="font-size: 11pt; margin-right: 20px; text-align: right;">Developed by Luke Bernstein</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="secondary">
-            <div class="row">
-                <div class="col-md-6 col-sm-3">
-                    <p style="font-size: 11pt; margin-left: 20px">All Images &#169;2020 Amy B. Grant</p>
-                </div>
-                <div class="col-md-6 col-sm-9">
-                    <p style="font-size: 11pt; margin-right: 20px; text-align: right;">Developed by Luke Bernstein</p>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 </footer>
+
+<script>
+    var invalidClassName = 'invalid'
+    var inputs = document.querySelectorAll('input, select, textarea')
+    inputs.forEach(function (input) {
+        // Add a css class on submit when the input is invalid.
+        input.addEventListener('invalid', function () {
+            input.classList.add(invalidClassName)
+        })
+
+        // Remove the class when the input becomes valid.
+        // 'input' will fire each time the user types
+        input.addEventListener('input', function () {
+            if (input.validity.valid) {
+                input.classList.remove(invalidClassName)
+            }
+        })
+    })
+</script>
 
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>

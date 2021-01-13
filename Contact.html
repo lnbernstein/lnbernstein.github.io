@@ -16,6 +16,7 @@
             height: 600px;
             width: auto;
         }
+
     </style>
 
     <title>Contact</title>
@@ -40,11 +41,11 @@
                 <form action="https://send.pageclip.co/BMX8Cxy6OaVcy0yYTWBsEMVQKSuk92uI/Contact-Form" class="pageclip-form" method="post">
                     <div class="form-group">
                         <label for="name">Name (required)</label>
-                        <input name="name" style="background-color: whitesmoke" type="text" class="form-control" id="name" placeholder="Enter Name">
+                        <input name="name" style="background-color: whitesmoke" type="text" class="form-control" id="name" placeholder="John Doe" required>
                         <label for="contactEmail">Email Address (required)</label>
-                        <input name="_replyto" style="background-color: whitesmoke" type="email" class="form-control" id="contactEmail" placeholder="Enter email">
+                        <input name="_replyto" style="background-color: whitesmoke" type="email" class="form-control" id="contactEmail" placeholder="john123@gmail.com" required>
                         <label for="phoneNum">Phone Number</label>
-                        <input name="phone" style="background-color: whitesmoke" type="text" class="form-control" id="phoneNum" placeholder="Enter Phone Number">
+                        <input name="phone" style="background-color: whitesmoke" type="tel" class="form-control" id="phoneNum" placeholder="555-555-5555">
                         <label for="commentsTA">Comments</label>
                         <textarea name="message" style="background-color: whitesmoke" class="form-control" id="commentsTA" rows="5"></textarea>
                     </div>
@@ -69,6 +70,25 @@
             });
         </script>
     </div>
+
+    <script>
+        var invalidClassName = 'invalid'
+        var inputs = document.querySelectorAll('input, select, textarea')
+        inputs.forEach(function (input) {
+            // Add a css class on submit when the input is invalid.
+            input.addEventListener('invalid', function () {
+                input.classList.add(invalidClassName)
+            })
+
+            // Remove the class when the input becomes valid.
+            // 'input' will fire each time the user types
+            input.addEventListener('input', function () {
+                if (input.validity.valid) {
+                    input.classList.remove(invalidClassName)
+                }
+            })
+        })
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
