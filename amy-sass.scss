@@ -1,5 +1,41 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+
+.carousel-fade {
+  .carousel-inner {
+    .carousel-item {
+      transition-property: opacity;
+    }
+
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+}
 
 @include media-breakpoint-down(sm) {
   .small-device-nav {
