@@ -50,6 +50,10 @@
   .footer-git {
     text-align: center;
   }
+
+  body {
+    margin-bottom: 0px !important;
+  }
 }
 
 @include media-breakpoint-only(xl) {
