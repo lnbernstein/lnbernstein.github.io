@@ -1,45 +1,106 @@
 <head>
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link href="amy-sass.css" rel="stylesheet">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 250px;
+        }
+
+        .footer {
+            background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #contentFooter {
+            margin: 0px;
+            width: 100%;
+            background: whitesmoke;
+            /*padding: 50px 0 40px;*/
+            padding-top: 40px;
+            margin-bottom: 30px;
+            /*color: whitesmoke;*/
+        }
+
+        #creditsFooter {
+            color: black;
+            line-height: 30px;
+        }
+
+
+        @media screen and (max-width:992px){
+            body{
+                padding-bottom: 1000px;
+            }
+
+            footer{
+                padding-bottom: 2rem;
+            }
+
+            footer .centered-on-small{
+                text-align: center;
+            }
+        }
+
+
+    </style>
 </head>
 
+
+<!--Two color footer with email newsletter signup-->
+<!--uses footer tag with two ids for each row-->
+
 <footer class="footer">
-    <div id="footer-content">
-
-            <div class="primary p-4">
-                <div class="row justify-content-center">
-                    <div class="col-md-4">
-                        <h3 style="margin-top: 15px" class="text-center">Join My Email List!</h3>
-                    </div>
-                    <div class="col-md-4">
-                        <form action="https://send.pageclip.co/BMX8Cxy6OaVcy0yYTWBsEMVQKSuk92uI/Newsletter" class="pageclip-form" method="post">
-                            <div class="input-group input-group-sm mb-3">
-                                <input name="email" type="email" class="form-control" placeholder="john123@gmail.com" aria-label="Recipient's username" aria-describedby="Email Address" required>
-                                <div class="input-group-append">
-                                    <button style="margin-left: 20px" class="pageclip-form__submit btn btn-secondary" type="submit">
-                                        <span>Join!</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <div id="contentFooter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <h3 class="text-center">Join My Email List!</h3>
                 </div>
-            </div>
-            <div class="secondary">
-                <div class="row" >
-                    <div class="col-md-6 col-sm-3">
-                        <p style="font-size: 11pt; margin-left: 20px">All Images &#169;2020 Amy B. Grant</p>
-                    </div>
-                    <div class="col-md-6 col-sm-9">
-                        <a style="text-decoration: none; color: black" href="contact-luke.html">
-                            <p style="font-size: 11pt; margin-right: 20px; text-align: right;">Developed by Luke Bernstein</p>
-                        </a>
-
-                    </div>
+                <div class="col-md-4">
+                    <form action="https://send.pageclip.co/BMX8Cxy6OaVcy0yYTWBsEMVQKSuk92uI/Newsletter" class="pageclip-form" method="post">
+                        <div class="input-group input-group-sm mb-4">
+                            <input name="email" type="email" class="form-control" placeholder="john123@gmail.com" aria-label="Recipient's username" aria-describedby="Email Address" required>
+                            <div class="input-group-append">
+                                <button style="margin-left: 20px" class="pageclip-form__submit btn btn-secondary" type="submit">
+                                    <span>Join!</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container" id="creditsFooter">
+        <div class="row">
+            <div class="col-md-6 col-sm-2">
+                <p style="font-size: 11pt; margin-left: 20px">All Images &#169;2020 Amy B. Grant</p>
+            </div>
+            <div class="col-md-1 col-sm-1 footer-git">
+                <a href="https://github.com/lnbernstein/lnbernstein.github.io" >
+                    <img src="images/GitHub-Mark-32px.png">
+                </a>
+            </div>
+            <div class="col-md-5 col-sm-9">
+                <a style="text-decoration: none; color: black" href="contact-luke.html">
+                    <p style="font-size: 11pt; margin-right: 20px; text-align: right;">Developed by Luke Bernstein</p>
+                </a>
 
+            </div>
+
+        </div>
+    </div>
 </footer>
+
 
 <script>
     var invalidClassName = 'invalid'

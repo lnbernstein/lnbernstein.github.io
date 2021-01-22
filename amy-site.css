@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=ABeeZee");
 
 body {
-    font-family: ABeeZee;
+    font-family: ABeeZee !important;
     background-color: #8fae90;
 }
 
@@ -43,7 +43,7 @@ li {
 }
 
 .card {
-    border: none;
+    border: none !important;
     background-color: #d1e0e0;
 }
 
@@ -55,34 +55,38 @@ li {
     color: white;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
+/*html {*/
+/*    !*position: relative;*!*/
+/*    height: 100%;*/
+/*}*/
 
-body {
-    margin-bottom: 60px; /* Margin bottom by footer height */
-    background-color: #FFEBCD;
-}
+/*body {*/
+/*    !*margin-bottom: 60px; !* Margin bottom by footer height *!*!*/
+/*    background-color: #FFEBCD;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    min-height: 100%;*/
+/*}*/
 
 input {
     background-color: #FFEBCD;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0px; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
-}
+/*.footer {*/
+/*    !*position: absolute;*!*/
+/*    !*bottom: 0;*!*/
+/*    !*width: 100%;*!*/
+/*    !*height: 0px; !* Set the fixed height of the footer here *!*!*/
+/*    !*line-height: 60px; !* Vertically center the text there *!*!*/
+/*    margin-top: auto;*/
+/*}*/
 
 #footer-content {
     background-color: white;
 }
 
 .gallery-top {
-    margin-top: 10px;
+    margin-top: 10px !important;
 }
 
 .card {

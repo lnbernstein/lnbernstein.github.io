@@ -10619,7 +10619,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.carousel-fade .carousel-inner .item {
+.carousel-fade .carousel-inner .carousel-item {
   transition-property: opacity;
 }
 .carousel-fade .carousel-inner .item,
@@ -10651,6 +10651,10 @@ textarea.form-control-lg {
 
   h4, .h4 {
     font-size: 19px;
+  }
+
+  .footer-git {
+    text-align: center;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {

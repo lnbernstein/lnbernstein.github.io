@@ -32,8 +32,7 @@ Convert contact form and newsletter form to server based backend written in Pyth
 ### Project Structure:
 
 * Each HTML page is in its own file
-    * index.html, gallery-showcase, about, exhibits, contact, floral-carousel, landscape-carousel, still-life carousel
-    
+    * index.html, gallery-showcase, about, exhibits, contact, florals, landscapes, still-life    
 * Images folder -- contains all images seen on the webpage
 
 ### License 

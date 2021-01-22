@@ -1,9 +1,9 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
-$bootstrap-sm: 576px;
-$bootstrap-md: 768px;
-$bootstrap-lg: 992px;
-$bootstrap-xl: 1200px;
+//$bootstrap-sm: 576px;
+//$bootstrap-md: 768px;
+//$bootstrap-lg: 992px;
+//$bootstrap-xl: 1200px;
 
 .carousel-fade {
   .carousel-inner {
@@ -45,6 +45,10 @@ $bootstrap-xl: 1200px;
 
   h4 {
     font-size: 19px;
+  }
+
+  .footer-git {
+    text-align: center;
   }
 }
 
