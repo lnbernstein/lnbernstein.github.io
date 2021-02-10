@@ -37,4 +37,5 @@ Convert contact form and newsletter form to server based backend written in Pyth
 
 ### License 
 
-This code and documentation is released under the MIT License
+This code and documentation is Copyright (c) 2021 Luke Bernstein and can not be copied and/or distributed without the express
+permission of Luke Bernstein <luke.bernstein@nyu.edu>.
