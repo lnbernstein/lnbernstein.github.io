@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link href="amy-sass.css" rel="stylesheet">
+    <link href="amy-site.css" rel="stylesheet">
+    <title>ACME Inc.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="sticky-footer.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        margin-bottom: 550px;
+    }
+
+    .footer {
+        background: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #contentFooter {
+        margin: 0px;
+        width: 100%;
+        background: whitesmoke;
+        padding: 50px 0 40px;
+        margin-bottom: 30px;
+        /*color: whitesmoke;*/
+    }
+
+    #copyrightFooter {
+        color: black;
+        line-height: 30px;
+    }
+
+    #backToTopLink::after {
+        display: block;
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-left: 1px solid #93959d;
+        border-top: 1px solid #93959d;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        left: 50%;
+        top: 13px;
+        margin-left: -9px;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+    }
+
+    @media screen and (max-width:992px){
+        body{
+            padding-bottom: 1000px;
+        }
+
+        footer{
+            padding-bottom: 2rem;
+        }
+
+        footer .centered-on-small{
+            text-align: center;
+        }
+    }
+
+
+</style>
+<body>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-toggleable-md navbar-light">
+            <button class="navbar-toggler navbar-toggler-right" type="button"
+                    data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="http://via.placeholder.com/200x70"></a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Foo</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Bar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Qux</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<div class="container">
+    <div class="mt-1">
+        <h1>ACME Inc. presents</h1>
+    </div>
+    <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<footer class="footer">
+    <div id="contentFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 style="margin-top: 15px" class="text-center">Join My Email List!</h3>
+                </div>
+                <div class="col-md-4">
+                    <form action="https://send.pageclip.co/BMX8Cxy6OaVcy0yYTWBsEMVQKSuk92uI/Newsletter" class="pageclip-form" method="post">
+                    <div class="input-group input-group-sm mb-3">
+                        <input name="email" type="email" class="form-control" placeholder="john123@gmail.com" aria-label="Recipient's username" aria-describedby="Email Address" required>
+                        <div class="input-group-append">
+                            <button style="margin-left: 20px" class="pageclip-form__submit btn btn-secondary" type="submit">
+                                <span>Join!</span>
+                            </button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="copyrightFooter">
+        <div class="row">
+            <div class="col-md-6 col-sm-3">
+                <p style="font-size: 11pt; margin-left: 20px">All Images &#169;2020 Amy B. Grant</p>
+            </div>
+            <div class="col-md-6 col-sm-9">
+                <a style="text-decoration: none; color: black" href="contact-luke.html">
+                    <p style="font-size: 11pt; margin-right: 20px; text-align: right;">Developed by Luke Bernstein</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
